@@ -45,7 +45,10 @@
         var a = byId[en.target.id];
         if (a) {
           a.classList.add('is-active');
-          if (a.scrollIntoView) a.scrollIntoView({ block: 'nearest', inline: 'center', behavior: 'smooth' });
+          if (jump.scrollWidth > jump.clientWidth) {
+            var left = (a.offsetLeft - jump.offsetLeft) - (jump.clientWidth - a.offsetWidth) / 2;
+            jump.scrollTo({ left: Math.max(0, left), behavior: 'smooth' });
+          }
         }
       });
     }, { rootMargin: '-35% 0px -55% 0px', threshold: 0 });
