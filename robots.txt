@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /go/
+Disallow: /thanks/
+
+Sitemap: https://nk101.netlify.app/sitemap.xml

@@ -1,0 +1,3 @@
+# Netlify redirects - replace REF_LINK with the referral URL (absolute, with https://)
+/go   REF_LINK  302
+/go/  REF_LINK  302
